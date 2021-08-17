@@ -3,31 +3,10 @@
 @import "base/mixins";
 @import "base/operaciones";
 
-$tamaños: (
-   h1: 4em,
-   h2: 3em,
-);
-$h1: map-get($tamaños, h1);
-
-h1 {
-    font-size: $h1;
-}
 
 $wi100: 100%;
 
 $lista: #F9DDD7, #E9967A, #E64219;
-
-@each $color in $lista {
-    .nav- #{$color}{
-        background-color: #E64219;
-    }
-}
-
-@for $i from 1 to 4 {
-    h#{$i} {
-        font-size: $i * 2em;
-    }
-}
     
 
 * {
@@ -44,8 +23,9 @@ body {
 
 h1 {
     float: right;
-    
+    color: $primer-color;   
 }
+
 img {
     float: left;
 }
